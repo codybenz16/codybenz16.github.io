@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Cody Benz | Engineer • Pilot • Outdoors • Veteran </title>
+  <title>Cody Benz | Engineer • Pilot • Outdoors • Veteran</title>
 
   <meta name="description" content="Cody Benz — Engineer, pilot, outdoorsman, and military veteran building a life around aviation, adventure, engineering, and the outdoors.">
 
@@ -215,7 +216,7 @@
     }
 
     /* =========================
-       IDENTITY CARDS
+       IDENTITY / WHAT I'M ABOUT
     ========================= */
 
     .identity {
@@ -223,11 +224,41 @@
       color: #171717;
     }
 
+    .identity-layout {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 40px;
+      align-items: stretch;
+      margin-top: 50px;
+    }
+
+    /* CLIMBING IMAGE */
+
+    .climb-image {
+      overflow: hidden;
+      min-height: 540px;
+      background: #222;
+    }
+
+    .climb-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .climb-image:hover img {
+      transform: scale(1.03);
+    }
+
+    /* IDENTITY CARDS */
+
     .identity-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: 1fr 1fr;
       gap: 2px;
-      margin-top: 50px;
+      margin-top: 0;
     }
 
     .identity-card {
@@ -323,6 +354,15 @@
         gap: 50px;
       }
 
+      .identity-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .climb-image {
+        min-height: 400px;
+      }
+
       .identity-grid {
         grid-template-columns: 1fr 1fr;
       }
@@ -346,11 +386,17 @@
         min-height: 180px;
       }
 
+      .climb-image {
+        min-height: 350px;
+      }
+
       .polaroid {
         width: 90%;
       }
     }
+
   </style>
+
 </head>
 
 <body>
@@ -361,37 +407,44 @@
 
   <header class="hero" id="home">
 
-    <nav>
-      <div class="logo">CB</div>
+```
+<nav>
 
-      <div class="links">
-        <a href="#about">About</a>
-        <a href="#identity">Life</a>
-        <a href="#philosophy">Philosophy</a>
-      </div>
-    </nav>
+  <div class="logo">
+    CB
+  </div>
 
-    <div class="hero-content">
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#identity">Life</a>
+    <a href="#philosophy">Philosophy</a>
+  </div>
 
-      <div class="eyebrow">
-        Engineer • Pilot • Outdoors • Veteran
-      </div>
+</nav>
 
-      <h1>Cody Benz</h1>
+<div class="hero-content">
 
-      <p class="hero-subtitle">
-        Building a life around aviation, adventure, constant motion,
-        and the places most people don't bother going.
-      </p>
+  <div class="eyebrow">
+    Engineer • Pilot • Outdoors • Veteran
+  </div>
 
-      <div class="scroll">
-        ↓ Explore
-      </div>
+  <h1>
+    Cody Benz
+  </h1>
 
-    </div>
+  <p class="hero-subtitle">
+    Building a life around aviation, adventure, constant motion,
+    and the places most people don't bother going.
+  </p>
+
+  <div class="scroll">
+    ↓ Explore
+  </div>
+
+</div>
+```
 
   </header>
-
 
   <!-- =========================
        ABOUT
@@ -399,148 +452,182 @@
 
   <section class="about" id="about">
 
-    <div class="section-inner">
+```
+<div class="section-inner">
 
-      <div class="about-grid">
+  <div class="about-grid">
 
-        <div>
+    <div>
 
-          <div class="section-label">
-            About
-          </div>
+      <div class="section-label">
+        About
+      </div>
 
-          <h2>
-            Make it<br>
-            interesting.
-          </h2>
+      <h2>
+        Make it<br>
+        interesting.
+      </h2>
 
-          <div class="about-text">
+      <div class="about-text">
 
-            <p>
-              I'm Cody — a self-proclaimed polymath with a tendency
-              toward the unconventional.
-            </p>
+        <p>
+          I'm Cody — a self-proclaimed polymath with a tendency
+          toward the unconventional.
+        </p>
 
-            <p>
-              My background spans aircraft engineering, military special warfare, aviation,
-              rock and ice climbing, paragliding, and a life spent exploring the outdoors.
+        <p>
+          My background spans aircraft engineering, military special warfare,
+          aviation, rock and ice climbing, paragliding, and a life spent
+          exploring the outdoors.
+        </p>
 
-            </p>
+        <p>
+          I'm interested in building things, flying airplanes,
+          learning difficult skills, and designing a life with
+          as much freedom and adventure as possible.
+        </p>
 
-            <p>
-              I'm interested in building things, flying airplanes,
-              learning difficult skills, and designing a life with
-              as much freedom and adventure as possible.
-            </p>
+      </div>
 
-          </div>
-
-        </div>
+    </div>
 
 
-        <div class="polaroid-wrapper">
+    <div class="polaroid-wrapper">
 
-          <div class="polaroid">
+      <div class="polaroid">
 
-            <!-- Put your Polaroid image in the same GitHub folder
-                 and name it: polaroid.png -->
+        <img src="polaroid.png" alt="Cody Benz">
 
-            <img src="polaroid.png" alt="Cody Benz">
-
-            <div class="polaroid-caption">
-              Somewhere up North.
-            </div>
-
-          </div>
-
+        <div class="polaroid-caption">
+          Somewhere up North.
         </div>
 
       </div>
 
     </div>
 
+  </div>
+
+</div>
+```
+
   </section>
 
-
   <!-- =========================
-       IDENTITY
+       IDENTITY / WHAT I'M ABOUT
   ========================= -->
 
   <section class="identity" id="identity">
 
-    <div class="section-inner">
+```
+<div class="section-inner">
 
-      <div class="section-label">
-        The Four Things
+  <div class="section-label">
+    The Four Things
+  </div>
+
+  <h2>
+    What I'm about.
+  </h2>
+
+
+  <div class="identity-layout">
+
+    <!-- CLIMBING IMAGE -->
+
+    <div class="climb-image">
+
+      <img src="climb.png" alt="Rock climbing">
+
+    </div>
+
+
+    <!-- FOUR IDENTITY CARDS -->
+
+    <div class="identity-grid">
+
+      <div class="identity-card">
+
+        <div class="card-number">
+          01
+        </div>
+
+        <div>
+
+          <h3>
+            Engineer
+          </h3>
+
+          <p>
+            Mechanical engineering mindset.
+            Understand the system. Build it better.
+          </p>
+
+        </div>
+
       </div>
 
-      <h2>
-        What I'm about.
-      </h2>
 
+      <div class="identity-card">
 
-      <div class="identity-grid">
+        <div class="card-number">
+          02
+        </div>
 
-        <div class="identity-card">
+        <div>
 
-          <div class="card-number">01</div>
+          <h3>
+            Pilot
+          </h3>
 
-          <div>
-            <h3>Engineer</h3>
-
-            <p>
-              Mechanical engineering mindset.
-              Understand the system. Build it better.
-            </p>
-          </div>
+          <p>
+            Aviation, backcountry flying, and the
+            long-term goal of flying where the pavement ends.
+          </p>
 
         </div>
 
+      </div>
 
-        <div class="identity-card">
 
-          <div class="card-number">02</div>
+      <div class="identity-card">
 
-          <div>
-            <h3>Pilot</h3>
+        <div class="card-number">
+          03
+        </div>
 
-            <p>
-              Aviation, backcountry flying, and the
-              long-term goal of flying where the pavement ends.
-            </p>
-          </div>
+        <div>
+
+          <h3>
+            Outdoors
+          </h3>
+
+          <p>
+            Mountains, diving, climbing, flying,
+            camping, and finding the next place worth exploring.
+          </p>
 
         </div>
 
+      </div>
 
-        <div class="identity-card">
 
-          <div class="card-number">03</div>
+      <div class="identity-card">
 
-          <div>
-            <h3>Outdoors</h3>
-
-            <p>
-              Mountains, diving, climbing, flying,
-              camping, and finding the next place worth exploring.
-            </p>
-          </div>
-
+        <div class="card-number">
+          04
         </div>
 
+        <div>
 
-        <div class="identity-card">
+          <h3>
+            Military
+          </h3>
 
-          <div class="card-number">04</div>
-
-          <div>
-            <h3>Military</h3>
-
-            <p>
-              Service, discipline, resilience, and a
-              desire to do difficult things.
-            </p>
-          </div>
+          <p>
+            Service, discipline, resilience, and a
+            desire to do difficult things.
+          </p>
 
         </div>
 
@@ -548,8 +635,12 @@
 
     </div>
 
-  </section>
+  </div>
 
+</div>
+```
+
+  </section>
 
   <!-- =========================
        PHILOSOPHY
@@ -557,22 +648,31 @@
 
   <section class="philosophy" id="philosophy">
 
-    <div class="section-inner">
+```
+<div class="section-inner">
 
-      <div class="section-label">
-        Philosophy
-      </div>
+  <div class="section-label">
+    Philosophy
+  </div>
 
-      <div class="quote">
-        <span class="quote-mark">"</span>
-        Pursue excellence. Seek beauty.
-        <span class="quote-mark">"</span>
-      </div>
+  <div class="quote">
 
-    </div>
+    <span class="quote-mark">
+      "
+    </span>
+
+    Pursue excellence. Seek beauty.
+
+    <span class="quote-mark">
+      "
+    </span>
+
+  </div>
+
+</div>
+```
 
   </section>
-
 
   <!-- =========================
        FOOTER
@@ -580,17 +680,19 @@
 
   <footer>
 
-    <p>
-      <strong>Cody Benz</strong>
-    </p>
+```
+<p>
+  <strong>Cody Benz</strong>
+</p>
 
-    <p>
-      Engineer • Pilot • Outdoors • Military
-    </p>
+<p>
+  Engineer • Pilot • Outdoors • Military
+</p>
 
-    <p style="margin-top: 15px;">
-      © 2026 Cody Benz
-    </p>
+<p style="margin-top: 15px;">
+  © 2026 Cody Benz
+</p>
+```
 
   </footer>
 
